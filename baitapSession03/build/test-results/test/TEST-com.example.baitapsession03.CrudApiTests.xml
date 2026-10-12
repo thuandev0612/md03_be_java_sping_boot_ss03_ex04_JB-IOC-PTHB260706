@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.baitapsession03.CrudApiTests" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-10-12T23:01:58.430Z" hostname="HP" time="1.652">
+  <properties/>
+  <testcase name="manualAndGeneratedIdsStayUniqueAndDuplicateCreatesReturn400()" classname="com.example.baitapsession03.CrudApiTests" time="0.21"/>
+  <testcase name="absentRecordsReturn404WithoutChangingLists()" classname="com.example.baitapsession03.CrudApiTests" time="0.09"/>
+  <testcase name="enrollmentSupportsCompleteCrudLifecycle()" classname="com.example.baitapsession03.CrudApiTests" time="0.071"/>
+  <testcase name="courseSupportsCompleteCrudLifecycle()" classname="com.example.baitapsession03.CrudApiTests" time="0.073"/>
+  <testcase name="instructorSupportsCompleteCrudLifecycle()" classname="com.example.baitapsession03.CrudApiTests" time="0.07"/>
+  <testcase name="invalidIdsMalformedJsonAndMismatchedBodyIdReturn400()" classname="com.example.baitapsession03.CrudApiTests" time="0.295"/>
+  <testcase name="deletingChildrenThenParentsLeavesEmptyListsWith200()" classname="com.example.baitapsession03.CrudApiTests" time="0.106"/>
+  <testcase name="referencedParentsCannotBeDeletedUntilChildrenAreReassigned()" classname="com.example.baitapsession03.CrudApiTests" time="0.142"/>
+  <testcase name="invalidBodiesReturn400AndNeverPartiallyUpdateRecords()" classname="com.example.baitapsession03.CrudApiTests" time="0.276"/>
+  <system-out><![CDATA[2026-10-13T06:01:58.432+07:00  INFO 24048 --- [baitapSession03] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.baitapsession03.CrudApiTests]: CrudApiTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-10-13T06:01:58.434+07:00  INFO 24048 --- [baitapSession03] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.baitapsession03.BaitapSession03Application for test class com.example.baitapsession03.CrudApiTests
+2026-10-13T06:01:58.435+07:00  INFO 24048 --- [baitapSession03] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.baitapsession03.CrudApiTests]: CrudApiTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-10-13T06:01:58.436+07:00  INFO 24048 --- [baitapSession03] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.baitapsession03.BaitapSession03Application for test class com.example.baitapsession03.CrudApiTests
+2026-10-13T06:01:59.335+07:00  INFO 24048 --- [baitapSession03] [    Test worker] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-13T06:01:59.351+07:00  INFO 24048 --- [baitapSession03] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.1)
+
+2026-10-13T06:01:59.392+07:00  INFO 24048 --- [baitapSession03] [    Test worker] c.example.baitapsession03.CrudApiTests   : Starting CrudApiTests using Java 21 with PID 24048 (started by Truong Van Thuan in D:\Code\Springboot\baitapSession03)
+2026-10-13T06:01:59.393+07:00  INFO 24048 --- [baitapSession03] [    Test worker] c.example.baitapsession03.CrudApiTests   : No active profile set, falling back to 1 default profile: "default"
+2026-10-13T06:01:59.533+07:00  INFO 24048 --- [baitapSession03] [    Test worker] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 0 (http)
+2026-10-13T06:01:59.533+07:00  INFO 24048 --- [baitapSession03] [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-13T06:01:59.534+07:00  INFO 24048 --- [baitapSession03] [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-10-13T06:01:59.579+07:00  INFO 24048 --- [baitapSession03] [    Test worker] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 185 ms
+2026-10-13T06:01:59.659+07:00  INFO 24048 --- [baitapSession03] [    Test worker] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 51690 (http) with context path '/'
+2026-10-13T06:01:59.661+07:00  INFO 24048 --- [baitapSession03] [    Test worker] c.example.baitapsession03.CrudApiTests   : Started CrudApiTests in 0.298 seconds (process running for 7.047)
+2026-10-13T06:01:59.671+07:00  INFO 24048 --- [baitapSession03] [o-auto-3-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-13T06:01:59.671+07:00  INFO 24048 --- [baitapSession03] [o-auto-3-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-10-13T06:01:59.673+07:00  INFO 24048 --- [baitapSession03] [o-auto-3-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-10-13T06:02:00.083+07:00  INFO 24048 --- [baitapSession03] [    Test worker] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-13T06:02:00.096+07:00  INFO 24048 --- [baitapSession03] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
